@@ -1,0 +1,7 @@
+DarkBlock added a new parameter “type” where they can pass in a string. Gangajal will name it “The NFT Is stolen/scammed” for your protocol. 
+Gangajal will need to pass in the address of the person claiming their NFT is stolen as the creator address and then ask them to generate a signature as shown in the docs on that page.
+Stolen NFT Flags Listing
+To retrieve all Stolen NFT Flags reported by users DarkBlock will  build a custom query.
+Darkblock Protocol Requests
+Once Darkblock unlockable content is detected they need to construct a session token to access the content. This session token is a combination of the epoch timestamp (milliseconds), the signature of the concatenation of the current epoch timestamp and the wallet address of the user, and the chain.
+One session token is needed per chain, and can be cached, as they do not currently expire. They will be prone to expiration in the future, the rules around this will be coming soon based on partner feedback.
