@@ -1,0 +1,11 @@
+Here is the format of the session token: <epoch millis>_<signature>_<chain>
+Example:
+Signature of 16529845012790x438cba7e454b59a9f897d4731fd3eaef37160c0a
+Becomes the following session token: 1652984501279_0x23ddc5b8767a3c2c7c9bab3bdcb86c88a328d21b214e2edad91c6d40b4ad34860c99cfbbf06381c718d8ef3c8068145834ba9a2c8bd442afae7468fef1d10a2f1c_Ethereum
+The ArtId can be taken from the Darkblock info response and combined with the session token, owner wallet address, NFT Contract and Token Id, and platform to construct a Gateway request.
+https://gateway.darkblock.io/proxy?artid=&session_token=&token_id=&contract=&platform=
+Example:
+https://gateway.darkblock.io/proxy?artid=9b3aa571-d42f-4699-b09f-6b6c76dab994&session_token=1652985436749_0x1c52329bee2409530b07ddce694df6e75671c3b51bde4aa02f25630f99c369e21d420301b7b7d89eb892b389f1fe32a262c3eae296d2ae81bc05805aca46d8f21c&token_id=30553606573219150352991292921105176340809048341686170040023897669293200900097&contract=0x495f947276749ce646f68ac8c248420045cb7b5e&platform=Ethereum
+(not a working example)
+For Ethereum compatible chains we can use this handy-dandy signature tool that allows you to paste in some arbitrary text and create a signature with Metamask:
+https://random-crap-public.s3.amazonaws.com/sign.html
